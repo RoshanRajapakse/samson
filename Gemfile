@@ -13,7 +13,7 @@ group :preload do
   # AR extensions
   gem 'goldiloader'
   gem 'pagy'
-  gem 'audited'
+  gem 'audited', '>= 5.3.3'
   gem 'soft_deletion'
   gem 'doorkeeper'
 end
