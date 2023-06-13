@@ -15,7 +15,7 @@ group :preload do
   gem 'pagy'
   gem 'audited'
   gem 'soft_deletion'
-  gem 'doorkeeper'
+  gem 'doorkeeper', '>= 5.6.6'
 end
 
 gem 'dogstatsd-ruby'
