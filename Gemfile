@@ -19,7 +19,7 @@ group :preload do
 end
 
 gem 'dogstatsd-ruby'
-gem 'puma'
+gem 'puma', '>= 5.6.7'
 gem 'attr_encrypted'
 gem 'sawyer'
 gem 'dalli'
