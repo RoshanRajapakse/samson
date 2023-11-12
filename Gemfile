@@ -30,7 +30,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-ldap'
 gem 'omniauth-gitlab'
 gem 'omniauth-bitbucket'
-gem 'omniauth-rails_csrf_protection' # remove once https://github.com/omniauth/omniauth/pull/809 is resolved
+gem 'omniauth-rails_csrf_protection' , '>= 1.0.0' # remove once https://github.com/omniauth/omniauth/pull/809 is resolved
 gem 'octokit'
 gem 'faraday'
 gem 'faraday-http-cache'
@@ -43,10 +43,10 @@ gem 'net-http-persistent'
 gem 'concurrent-ruby'
 # Can delete once this PR https://github.com/hashicorp/vault-ruby/pull/188 is merged and changes reconciled
 gem 'vault', git: 'https://github.com/zendesk/vault-ruby.git', ref: '96be391a2fd50a42871c8b9dc3c59fddbdbdc556'
-gem 'lograge'
+gem 'lograge', '>= 0.10.0'
 gem 'logstash-event'
 gem 'diffy'
-gem 'validates_lengths_from_database'
+gem 'validates_lengths_from_database', '>= 0.8.0'
 gem 'large_object_store'
 gem 'parallel'
 gem 'stackprof'
@@ -112,7 +112,7 @@ end
 
 group :test do
   gem 'minitest-rails'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.5'
   gem 'maxitest'
   gem 'mocha'
   gem 'webmock'
