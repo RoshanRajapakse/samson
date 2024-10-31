@@ -103,7 +103,7 @@ group :development, :test do
   gem 'bootsnap'
   gem 'awesome_print'
   gem 'brakeman'
-  gem 'rubocop'
+  gem 'rubocop', '>= 1.66.0'
   gem 'rubocop-rails'
   gem 'flay'
   gem 'parallel_tests'
