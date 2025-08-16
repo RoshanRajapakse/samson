@@ -5,16 +5,16 @@ ruby File.read('.ruby-version').strip
 
 # gems that have rails engines are are always needed
 group :preload do
-  gem 'rails', '~> 6.1.5'
+  gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
   gem 'dotenv'
   gem 'connection_pool'
   gem 'marco-polo'
 
   # AR extensions
-  gem 'goldiloader'
+  gem 'goldiloader', '>= 4.2.0'
   gem 'pagy'
-  gem 'audited'
-  gem 'soft_deletion'
+  gem 'audited', '>= 5.4.0'
+  gem 'soft_deletion', '>= 1.9.0'
   gem 'doorkeeper'
 end
 
@@ -46,7 +46,7 @@ gem 'vault', git: 'https://github.com/zendesk/vault-ruby.git', ref: '96be391a2fd
 gem 'lograge'
 gem 'logstash-event'
 gem 'diffy'
-gem 'validates_lengths_from_database'
+gem 'validates_lengths_from_database', '>= 0.8.0'
 gem 'large_object_store'
 gem 'parallel'
 gem 'stackprof'
@@ -117,6 +117,6 @@ group :test do
   gem 'mocha'
   gem 'webmock'
   gem 'single_cov'
-  gem 'ar_multi_threaded_transactional_tests'
+  gem 'ar_multi_threaded_transactional_tests', '>= 0.6.0'
   gem 'bundler-audit', require: false
 end
